@@ -1,0 +1,48 @@
+import asyncio
+import colorama
+from colorama import Back, Fore, Style
+import os
+from os import system
+from typing import List
+
+import aiohttp
+
+
+def write_file(arg: str) -> None:
+    with open('hits.txt', 'a', encoding='UTF-8') as f:
+        f.write(f'{arg}\n')
+
+
+class Checker:
+    def __init__(self, usernames: List[str]):
+        self.to_check = usernames
+
+    async def _check(self, session: aiohttp.ClientSession, username: str) -> None:
+        async with session.head(f'https://solo.to/@{username}') as response:
+            if response.status == 200 and len(username) > 2:
+                print(
+                    f'%s{Fore.RESET}[{Fore.RED}✗{Fore.RESET}] - [{Fore.RED}UNAVAILABLE{Fore.RESET}]{Fore.BLACK} https://solo.to/@%s%s'
+                    % ('', username, '')
+                )
+            else:
+                print(
+                    f'%s{Fore.RESET}[{Fore.GREEN}HIT! ✜{Fore.RESET}] - [{Fore.GREEN}AVAILABLE{Fore.RESET}]{Fore.MAGENTA} https://solo.to/@%s%s'
+                    % ('', username, '')
+                )
+                write_file(username)
+
+    async def start(self):
+        print(f'{Fore.MAGENTA}╔══{Fore.RED}M00N 月 Checker ⟳\n{Fore.MAGENTA}╚══►Loading..{Fore.RESET}')
+        async with aiohttp.ClientSession() as sess:
+            return await asyncio.gather(*[self._check(sess, u) for u in self.to_check])
+
+
+if __name__ == '__main__':
+    system('cls && title Solo.ez my dick.com | Dev : mo0n#0494/#9999 / cvl#0001')
+
+    with open('usernames.txt', encoding='UTF-8') as f:
+        username_list = [line.strip() for line in f]
+
+    checker = Checker(username_list)
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(checker.start())
