@@ -38,7 +38,7 @@ class Checker:
 
 
 if __name__ == '__main__':
-    system('cls && title Solo.ez my dick.com | Dev : mo0n#0494/#9999 / cvl#0001')
+    system('cls && title Solo.ez my dick.com | Dev : </.mo0n>#8888')
 
     with open('usernames.txt', encoding='UTF-8') as f:
         username_list = [line.strip() for line in f]
