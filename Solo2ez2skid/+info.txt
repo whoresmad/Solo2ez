@@ -1,7 +1,7 @@
-How do I run the Finder?
+How do I run the Checker?
 -Write the names you want to generate in usernames.txt [<--- DO NOT CHANGE THE NAME OF THAT TXT OR ELSE HE PROGRAM WON'T WORK!]
 -Open through the folder all where all the files are located in (with the Solo2ez/main.py/checker idfk what u wanna call it stfu. Don't be a retarted ass nigga). innit cmd
--Type: python [thename prob Solo2ez].py
+-Type: python [thename prob Solo2ez.py]
 -^^ and it will start it automaticly!!
 {Don't forget some names will show avaible but they not cause they are got " copy license " means its a bussniss account or som shit.
 {
@@ -14,9 +14,9 @@ How do I run the Finder?
 
 
 |------------------------------------------|
- Moon's soup recept:
+ @nunfamous's soup recept:
 
- 1. Moon
+ 1. Sey
  2. Hadez
  3. Cocks
  4. Cvl
@@ -27,4 +27,4 @@ How do I run the Finder?
 
 
 
-For any quostions / help dm: </.mo0n>#8888 / https://dsc.gg/rlvc / DownFall#0494
+For any quostions/help dm: sey#8383 \ https://dsc.gg/dmdgo
