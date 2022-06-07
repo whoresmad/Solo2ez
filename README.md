@@ -20,8 +20,5 @@ Now go ahead and try to use ur brain how to install the reqs for the checker. --
 
 2# For the pro skids.
 ----------------------------------------------------------------------------------------------------------------
-月
-
-WOOOOW GOOD JOB THAT U SKIDDED SOMEONES TIME!! VERY GRAPE!!
-NOW GO AND TELL UR DAD HOW " PRO/GOOD " U ARE AT CODING AND THAT U WILL MAKE MILLIONS WITH " UR " PRO SKILLS!!
+月kys
 ----------------------------------------------------------------------------------------------------------------
